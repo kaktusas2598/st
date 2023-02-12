@@ -2,7 +2,7 @@
 Type=Application
 Exec=st
 TryExec=st
-Icon=utilities-terminal
+Icon=utilities-terminal-symbolic
 Terminal=false
 Categories=System;TerminalEmulator;
 
