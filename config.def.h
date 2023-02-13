@@ -6,6 +6,13 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "UbuntuMono Nerd Font Mono:size=16:antialias=true:autohint=true";
+static char *font2[] = {
+    "UbuntuMono Nerd Font Mono:size=16:antialias=true:autohint=true",
+    //"Symbola:pixelsize=15:antialias=true:autohint=true", // Unicode, works fine
+    //"Noto Color Emoji:pixelsize=15:antialias=true:autohint=true" // Coloured emoji fonts need libXft-bgra
+    //"feather" // Icomoon feather
+};
+
 static int borderpx = 5;
 
 /*
