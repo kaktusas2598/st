@@ -261,20 +261,20 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	//{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} }, //Defaults
-	//{ TERMMOD,              XK_Next,        zoom,           {.f = -1} }, //Defaults
 	{ ControlMask,          XK_equal,       zoom,           {.f = +1} }, // Increase font size
 	{ ControlMask,          XK_minus,       zoom,           {.f = -1} }, // Decrease font size
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} }, // Copy/paste with Ctrl+Shift c/v
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} }, // Paste with shift+insert
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} }, // Also copy/paste with Alt+ c/v
+	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-    { ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} }, //Defaults
-    { ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} }, //Defaults
-    //{ ShiftMask,            XK_K,           kscrollup,      {.i = -1} }, //Terminal scroll up - breaks Tmux resize
-	//{ ShiftMask,            XK_J,           kscrolldown,    {.i = -1} }, //Terminal scroll down
+    { MODKEY,               XK_k,           kscrollup,      {.i =  1} }, // Alt + j/k or Alt+ up/down to scroll
+	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
+	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 };
 
 /*
