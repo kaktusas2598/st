@@ -271,10 +271,10 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	//{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} }, //Defaults
-	//{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} }, //Defaults
-    { ShiftMask,            XK_K,           kscrollup,      {.i = -1} }, //Terminal scroll up
-	{ ShiftMask,            XK_J,           kscrolldown,    {.i = -1} }, //Terminal scroll down
+    { ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} }, //Defaults
+    { ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} }, //Defaults
+    //{ ShiftMask,            XK_K,           kscrollup,      {.i = -1} }, //Terminal scroll up - breaks Tmux resize
+	//{ ShiftMask,            XK_J,           kscrolldown,    {.i = -1} }, //Terminal scroll down
 };
 
 /*
