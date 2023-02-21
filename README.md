@@ -1,5 +1,8 @@
 # st - simple terminal
 --------------------
+
+  ![st](https://raw.githubusercontent.com/kaktusas2598/st/master/screenshot.png)
+
 st is a simple terminal emulator for X which sucks less. This is my patched version
 of st which includes these features:
 
